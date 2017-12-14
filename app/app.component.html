@@ -1,0 +1,9 @@
+<!-- https://docs.nativescript.org/angular/core-concepts/angular-navigation.html#page-router-outlet -->
+<page-router-outlet></page-router-outlet>
+
+<ActionBar title="{N} Scan Text Example"></ActionBar>
+<StackLayout horizontalAlignment="center" verticalAlignment="center">
+    <Label class="h3 p-15" [text]="read" textWrap="true"></Label>
+    <Image [src]="picture" width="256" height="256"></Image>
+    <Button text="Capture" (tap)="takePicture()" class="btn btn-primary"></Button>
+</StackLayout>
